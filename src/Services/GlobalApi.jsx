@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const movieBaseUrl = "https://api.themoviedb.org/3";
-const api_key = "68999de6a3402e85790b54fd3ef86706";
+const api_key = import.meta.env.VITE_TMDB_API_KEY;
 
 // Trending videos get karne ke liye
 const getTrendingVideos = () => {
